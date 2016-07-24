@@ -1,0 +1,9 @@
+[Unit]
+Description=i3BkgChanger timer periodically run i3bkg-changer
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

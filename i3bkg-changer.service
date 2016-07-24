@@ -1,0 +1,10 @@
+[Unit]
+Description=i3BkgChanger service rotates i3wm desktop background using feh
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/{user}/.Xauthority
+ExecStart=/bin/i3bkg-changer
+User={user}
+Group=systemd-journal
