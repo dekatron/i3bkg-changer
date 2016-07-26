@@ -1,7 +1,14 @@
 #!/bin/bash
 
+# Check if the x server is running, if not exit
+if ! xset q &>/dev/null; then
+  exit 0
+fi
+
+# Set the path to your backgrounds directory here
 BGFOLDERPATH='/path/to/backgrounds/folder/'
 
+# Background rotation script
 BGPATH=$(ls $BGFOLDERPATH{*.jpg,*.png} | shuf | head -1)
 feh --bg-scale $BGPATH
 
