@@ -1,12 +1,12 @@
 # i3bkg-changer
 
-This script intended for use with i3wm and feh
+This script is intended for use with i3wm and feh
 
 i3bkg-changer is a simple bash script intended to be used with cron or a simmlar job scheduler to periodically rotate your wallpaper in i3.
 
 ## Usage
 
-Download or the i3bkg-changer script.
+Download or git clone the i3bkg-changer script.
 
 Edit the script and set the location of the folder containing your background images in the BGFOLDERPATH variable
 
@@ -17,7 +17,7 @@ Finally add an entry to your job scheduler of choice to run the script at the de
 ## Systemd Service & Timer (Optional)
 
 As an alternative to cron I have included a i3bkg-changer.service file that can be used to run i3bkg-changer as a systemd oneshot service.
-There is also a i3bkg-changer.timer file that should be used to control the service.
+There is also an i3bkg-changer.timer file that should be used to control the service.
 
 The following instruction are for Arch linux and detials may vary for other operating systems.
 
